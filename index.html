@@ -1,0 +1,30 @@
+let palavra
+let cor 
+
+
+function setup() {
+   cor = color (random(0, 255), random(0, 255), random(0, 255)),
+  let palavras = [ "depresao", "amor", "sentimento", "paz"]
+  palavra = random(palavras);
+  createCanvas(400, 400)
+};
+
+function draw() {
+  
+  formatacao()
+  
+let maximo = width;
+let minimo = 0;
+  let quantidade = map(mouseX, 
+0, width, 1 , palavra. length);
+let parcial = palavra.substring(0,quantidade);
+text(parcial,200,200)
+}
+
+
+function formatacao (){
+background (cor)
+ fill ("black");
+  textSize (64);
+  textAlign(CENTER, CENTER)
+}
